@@ -2,10 +2,8 @@
 import { useState, useEffect } from "react";
 
 // ============================================================
-// DECOY LANDING PAGE — veemercado.com / verliner
-// Public face: References only (looks like a research library)
-// Hidden: Admin map view with visit tracking
-// Access admin: click the copyright bar 5 times
+// Fantasy book LANDING PAGE created by veemercado.com / verliner
+// Public face: A research library
 // ============================================================
 
 // WCAG AA colour tokens (on #0c0c0e background, verified ratios)
@@ -585,7 +583,7 @@ export default function App() {
               textTransform: "uppercase",
             }}
           >
-            veemercado.com
+            <a href="https://veemercado.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px", opacity: 0.8 }}>veemercado.com</a>
           </div>
           <h1
             style={{
@@ -698,9 +696,11 @@ export default function App() {
             lineHeight: 2,
           }}
         >
-          2026 V. Mercado aka verliner · Australia · All Rights Reserved
+          2026{" "}
+          <a href="https://veemercado.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px", opacity: 0.7 }}>Vee Mercado</a>{" "}aka{" "}
+          <a href="https://verlinerart.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px", opacity: 0.7 }}>verliner</a>{" "}· Australia · All Rights Reserved
           <br />
-          veemercado.com
+          <a href="https://veemercado.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px", opacity: 0.7 }}>veemercado.com</a>
         </div>
       </div>
     );
@@ -846,7 +846,7 @@ export default function App() {
           style={{
             color: c.gold,
             textDecoration: "underline",
-            textDecorationColor: c.gold + "88",
+            textDecorationColor: "#e8895a", textUnderlineOffset: "3px",
             fontStyle: "italic",
           }}
         >
@@ -867,7 +867,7 @@ export default function App() {
         }}
       >
         <div style={{ ...labelStyle, marginBottom: "0.6rem" }}>
-          veemercado.com
+          <a href="https://veemercado.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px", opacity: 0.8 }}>veemercado.com</a>
         </div>
         <h1
           style={{
@@ -890,8 +890,9 @@ export default function App() {
             lineHeight: 1.5,
           }}
         >
-          Cross-cultural mythology, folklore & worldbuilding references — V.
-          Mercado aka verliner
+          Cross-cultural mythology, folklore & worldbuilding references —{" "}
+          <a href="https://veemercado.com" target="_blank" rel="noopener noreferrer" style={{ color: c.text2, textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px"}}>Vee Mercado</a>{" "}aka{" "}
+          <a href="https://verlinerart.com" target="_blank" rel="noopener noreferrer" style={{ color: c.text2, textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px"}}>verliner</a>
         </p>
       </header>
 
@@ -1022,10 +1023,13 @@ export default function App() {
                         borderRadius: "4px",
                         padding: "0.3rem 0.85rem",
                         fontSize: "0.6875rem",
-                        letterSpacing: "0.15em",
+                        letterSpacing: "0.12em",
                         color: ref.tagColor,
-                        whiteSpace: "nowrap",
+                        whiteSpace: "normal",
+                        wordBreak: "break-word",
+                        maxWidth: "100%",
                         alignSelf: "flex-start",
+                        textAlign: "center",
                       }}
                     >
                       {ref.tag}
@@ -1080,7 +1084,7 @@ export default function App() {
                                 fontSize: "0.9375rem",
                                 color: ref.tagColor,
                                 textDecoration: "underline",
-                                textDecorationColor: ref.tagColor + "66",
+                                textDecorationColor: "#e8895a", textUnderlineOffset: "3px",
                                 marginBottom: "0.3rem",
                               }}
                               onClick={(e) => e.stopPropagation()}
@@ -1453,8 +1457,10 @@ export default function App() {
               margin: 0,
             }}
           >
-            2026 V. Mercado aka verliner · Australia · All Rights Reserved ·
-            veemercado.com
+            2026{" "}
+            <a href="https://veemercado.com" target="_blank" rel="noopener noreferrer" style={{ color: c.textUi, textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px"}}>Vee Mercado</a>{" "}aka{" "}
+            <a href="https://verlinerart.com" target="_blank" rel="noopener noreferrer" style={{ color: c.textUi, textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px"}}>verliner</a>{" "}· Australia · All Rights Reserved ·{" "}
+            <a href="https://veemercado.com" target="_blank" rel="noopener noreferrer" style={{ color: c.textUi, textDecoration: "underline", textDecorationColor: "#e8895a", textUnderlineOffset: "3px"}}>veemercado.com</a>
           </p>
         </div>
       </footer>
